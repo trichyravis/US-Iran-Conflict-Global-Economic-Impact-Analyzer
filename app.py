@@ -1,3 +1,4 @@
+
 """
 US–Iran Conflict: Global Economic Impact Analyzer
 Prof. V. Ravichandran | The Mountain Path — World of Finance
@@ -864,7 +865,7 @@ with tabs[3]:
         text=pivot.values.round(1),
         texttemplate="%{text}",
         textfont=dict(color="white", size=11),
-        colorbar=dict(title="Vulnerability", tickfont=dict(color=TXT), titlefont=dict(color=GOLD))
+        colorbar=dict(title=dict(text="Vulnerability", font=dict(color=GOLD)), tickfont=dict(color=TXT))
     ))
     fig_heat = mp_layout(fig_heat, "Vulnerability Heatmap: Region × Archetype", 400)
     st.plotly_chart(fig_heat, use_container_width=True)
