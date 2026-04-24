@@ -106,35 +106,12 @@ html, body, [class*="css"] {{
     -webkit-text-fill-color: {DARKBLUE} !important;
 }}
 
-/* Main body — selectbox & multiselect labels and values */
+/* Main body — selectbox & multiselect LABELS only (dark for readability) */
 .stSelectbox label, .stMultiSelect label {{
     color: {DARKBLUE} !important;
     -webkit-text-fill-color: {DARKBLUE} !important;
     font-weight: 600 !important;
     font-size: 1rem !important;
-}}
-.stSelectbox [data-baseweb="select"], .stMultiSelect [data-baseweb="select"] {{
-    background-color: #ffffff !important;
-    border: 1.5px solid {DARKBLUE}55 !important;
-    border-radius: 6px !important;
-}}
-.stSelectbox [data-baseweb="select"] *, .stMultiSelect [data-baseweb="select"] * {{
-    color: {DARKBLUE} !important;
-    -webkit-text-fill-color: {DARKBLUE} !important;
-}}
-.stSelectbox [data-baseweb="select"] svg, .stMultiSelect [data-baseweb="select"] svg {{
-    fill: {DARKBLUE} !important;
-}}
-/* Multiselect tags/chips */
-[data-baseweb="tag"] {{
-    background-color: {DARKBLUE} !important;
-}}
-[data-baseweb="tag"] span {{
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-}}
-[data-baseweb="tag"] svg {{
-    fill: #ffffff !important;
 }}
 
 /* Mountain Path brand banner */
