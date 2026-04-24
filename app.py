@@ -77,6 +77,35 @@ html, body, [class*="css"] {{
     font-family: 'Playfair Display', serif;
 }}
 
+/* Selectbox / dropdown text visibility on dark sidebar */
+[data-testid="stSidebar"] [data-baseweb="select"] {{
+    background-color: #ffffff !important;
+}}
+[data-testid="stSidebar"] [data-baseweb="select"] * {{
+    color: {DARKBLUE} !important;
+}}
+[data-testid="stSidebar"] [data-baseweb="select"] [data-testid="stMarkdownContainer"] {{
+    color: {DARKBLUE} !important;
+}}
+[data-testid="stSidebar"] [data-baseweb="select"] svg {{
+    fill: {DARKBLUE} !important;
+}}
+/* Dropdown menu items */
+[data-baseweb="popover"] [role="listbox"] {{
+    background-color: #ffffff !important;
+}}
+[data-baseweb="popover"] [role="option"] {{
+    color: {DARKBLUE} !important;
+}}
+[data-baseweb="popover"] [role="option"]:hover {{
+    background-color: {LIGHTBLUE}44 !important;
+}}
+/* Selected value text inside the selectbox */
+[data-testid="stSidebar"] [data-baseweb="select"] span {{
+    color: {DARKBLUE} !important;
+    -webkit-text-fill-color: {DARKBLUE} !important;
+}}
+
 /* Mountain Path brand banner */
 .mp-brand-banner {{
     background: linear-gradient(135deg, {DARKBLUE} 0%, #001f3d 100%);
